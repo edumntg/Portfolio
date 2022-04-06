@@ -1,0 +1,19 @@
+%% Motor DC
+
+f = 60;
+w = 2*pi*f;
+
+Jr = 3.5e-4;
+Ji = 1.5e-3;
+L = 3e-5;
+R = 8;
+Br = 3e-4;
+Bi = 2.5e-3;
+Kt = 0.2;
+Ke = 0.021 *60/w; % to V/rad/sec
+
+%% No Load
+
+J = Ji;
+B = Bi;
+Tx = 0.03; % some load torque
